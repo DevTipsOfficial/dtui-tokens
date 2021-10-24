@@ -1,0 +1,7 @@
+dist
+build
+www
+*.js
+*.jsx
+src/styles/variables.scss
+*.hbs
