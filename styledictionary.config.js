@@ -10,7 +10,6 @@ module.exports = {
                     "format": "css/variables",
                     "options": {
                         "outputReferences": true,
-                        fileHeader: "Do not edit directly."
                     }
                 }
             ]

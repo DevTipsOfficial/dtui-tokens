@@ -5,6 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "run-p build:* --print-label",
+    "build:sass": "run-p build:scss:* --continue-on-error --print-label",
+    "build:sass:variables": "sass src/styles/variables.scss dist/variables.css",
     "build:tokens": "style-dictionary build --config styledictionary.config.js"
   },
   "author": "DevTips Show",
@@ -15,6 +18,8 @@
   },
   "dependencies": {
     "eslint": "^8.1.0",
-    "prettier": "^2.4.1"
+    "prettier": "^2.4.1",
+    "run-p": "^0.0.0",
+    "sass": "^1.43.3"
   }
 }
